@@ -6,13 +6,9 @@
 /*   By: ulfernan <ulfernan@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/27 16:40:42 by ulfernan          #+#    #+#             */
-/*   Updated: 2024/09/27 16:44:55 by ulfernan         ###   ########.fr       */
+/*   Updated: 2024/11/13 10:23:51 by ulfernan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#if __STDC_VERSION__ < 199901L
-# define restrict /* nothing */
-#endif
 
 #ifndef LIBFT_H
 # define LIBFT_H
@@ -49,7 +45,7 @@ char			*ft_strchr(const char *s, int c);
 char			*ft_strdup(char *src);
 void			ft_striteri(char *s, void (*f)(unsigned int, char*));
 char			*ft_strjoin(char const *s1, char const *s2);
-unsigned int	ft_strlcat(char *dest, char *src, unsigned int size);
+unsigned int	ft_strlcat(char *dest, char const *src, unsigned int size);
 size_t			ft_strlcpy(
 					char *restrict dst, const char *restrict src,
 					size_t dstsize);
